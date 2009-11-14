@@ -1,0 +1,7 @@
+CoreData is a library for Objective-J/Cappuccino that enables easy RESTful communication with a server.
+
+USAGE:
+
+Put the CoreData.j file in your cappuccino project. To easily create a compatible controller in rails, use the included generator script. Place the generators/coredata_controller folder in your .rails/generators folder.
+
+Ex: scipt/generate coredata_controller person

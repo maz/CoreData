@@ -1,0 +1,34 @@
+<%title @person.name%>
+<p>
+  <b>Name:</b>
+  <%=h @person.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%=h @person.age %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%=h @person.street %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @person.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @person.state %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%=h @person.zipcode %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

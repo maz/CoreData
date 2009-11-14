@@ -1,0 +1,30 @@
+<%title "Listing people"%>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+  </tr>
+
+<% @people.each do |person| %>
+  <tr>
+    <td><%=h person.name %></td>
+    <td><%=h person.age %></td>
+    <td><%=h person.street %></td>
+    <td><%=h person.city %></td>
+    <td><%=h person.state %></td>
+    <td><%=h person.zipcode %></td>
+    <td><%= link_to 'Show', person %></td>
+    <td><%= link_to 'Edit', edit_person_path(person) %></td>
+    <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New person', new_person_path %>
