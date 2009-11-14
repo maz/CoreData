@@ -2,6 +2,7 @@ class CoredataControllerGenerator<Rails::Generator::Base
   def initialize(runtime_args, runtime_options = {})
     super
     @name=runtime_args.first
+    usage if @name.nil?
   end
   
   def manifest

@@ -1,1 +1,5 @@
-coredata_controller <model-name>
+Description:
+    Generates a controller ready for use with CoreData. This does not generate any models or migrations.
+
+Examples:
+    `./script/generate coredata_controller person`
