@@ -137,7 +137,7 @@
 	[win setContentView:wv];
 	[win orderFront:nil];
 	[win center];
-	[wv setAutoresiingeMask:CPViewWidthSizable|CPViewHeightSizable];
+	[wv setAutoresizingMask:CPViewWidthSizable|CPViewHeightSizable];
 }
 
 -(IBAction)add:(id)sender
